@@ -4,10 +4,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 public class Dbconnect{
      
-    public static final String DBDRIVER="org.gjt.mm.mysql.Driver";	//Ö¸¶¨Á¬½ÓÀàĞÍ
-    public static final String DBURL="jdbc:mysql://localhost:3306/project";	//Á´½ÓÃû
-    public static final String DBUSER="root";	//ÕË»§
-    public static final String DBPASS="wang";	//Mysql¹ÜÀíÔ±ÃÜÂë
+    public static final String DBDRIVER="org.gjt.mm.mysql.Driver";	//æŒ‡å®šè¿æ¥ç±»å‹
+    public static final String DBURL="jdbc:mysql://localhost:3306/project";	//é“¾æ¥å
+    public static final String DBUSER="root";	//è´¦æˆ·
+    public static final String DBPASS="****";	//Mysqlç®¡ç†å‘˜å¯†ç 
     public  Connection getConn(){
         Connection conn=null;
         try{
@@ -16,7 +16,7 @@ public class Dbconnect{
             e.printStackTrace();
         }
         try{
-        	//Á´½ÓJDBC
+        	//é“¾æ¥JDBC
             conn=DriverManager.getConnection(DBURL,DBUSER,DBPASS);	
         }catch(SQLException e){
             e.printStackTrace();
